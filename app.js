@@ -55,7 +55,6 @@ if (dev_mode === true) {
 
 app.use(require("./middlewares/exposeLoginStatus")); // expose le status de connexion aux templates
 app.use(require("./middlewares/exposeFlashMessage")); // affiche les messages dans le template
-//app.use(require("./middlewares/protectPrivateRoute"));
 
 // routers
 app.use("/", require("./routes/index"));
